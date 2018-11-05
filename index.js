@@ -1,10 +1,12 @@
-let example1 = ['Chris',5,true];
-let example2 = example1.map((Element) => {
-    return Element;
-});
-
-example2.push(11);
-
-
-console.log(example1);
-console.log(example2);
+let example1 = {
+    firstName: 'Chris',
+    lastName: 'Israel',
+    address: {
+        city: 'Kigali',
+        province: 'Kigali city'
+    },
+    age: 30,
+    cats: ['Milo','Tito','Achiles']
+};
+example1.age = 31;
+console.log(Object.keys(example1))
